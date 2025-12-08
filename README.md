@@ -30,7 +30,6 @@ Perfect for studying “attention under the hood” and debugging LLM internals.
 
 ## ▶️ Quickstart
 
-```bash
 pip install -r requirements.txt
 python transformer_encoder.py
 
