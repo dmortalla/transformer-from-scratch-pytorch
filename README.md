@@ -36,3 +36,40 @@ python transformer_encoder.py
 
 transformer_encoder.py    # Full encoder implementation
 requirements.txt
+
+---
+
+## 🧱 Architecture Overview
+
+The encoder block follows the common **Pre-LN Transformer** pattern:
+
+```text
+Input embeddings
+        |
+        v
+   LayerNorm (LN1)
+        |
+        v
+ Multi-Head Self-Attention
+        |
+        v
+ Residual Add ---------------+
+        |                    |
+        v                    |
+   LayerNorm (LN2)           |
+        |                    |
+        v                    |
+ Position-wise Feedforward   |
+ (MLP / GELU)                |
+        |                    |
+        v                    |
+ Residual Add <--------------+
+        |
+        v
+  Encoder output
+
+---
+
+## 📜 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
