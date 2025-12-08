@@ -33,3 +33,6 @@ Perfect for studying “attention under the hood” and debugging LLM internals.
 ```bash
 pip install -r requirements.txt
 python transformer_encoder.py
+
+transformer_encoder.py    # Full encoder implementation
+requirements.txt
