@@ -44,6 +44,7 @@ requirements.txt
 
 The encoder block follows the common **Pre-LN Transformer** pattern:
 
+```bash
 Input embeddings
         |
         v
@@ -67,6 +68,7 @@ Input embeddings
         |
         v
   Encoder output
+```
 
 ---
 
