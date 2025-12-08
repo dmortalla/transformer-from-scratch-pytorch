@@ -1,12 +1,12 @@
 # Transformer Encoder From Scratch (PyTorch)
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.2-red)
-![Transformer](https://img.shields.io/badge/Architecture-Transformer-blueviolet)
-![Attention](https://img.shields.io/badge/Module-Attention-ff69b4)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
+![Model](https://img.shields.io/badge/Architecture-Transformer-purple)
+![Educational](https://img.shields.io/badge/Purpose-Educational-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-> Minimal Transformer encoder implemented from scratch, including multi-head self-attention, QKV projections, residual connections, LayerNorm, and sinusoidal positional encoding.
+> A minimal, readable Transformer encoder implemented in PyTorch, designed to emphasize architecture clarity. Demonstrates LayerNorm ordering, attention mechanisms, residual connections, and feedforward blocks in a pedagogical format.
 
 ---
 
