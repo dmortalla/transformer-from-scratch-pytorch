@@ -1,6 +1,35 @@
-# Transformer Architecture From Scratch (PyTorch)
+# Transformer Encoder From Scratch (PyTorch)
 
-> Minimal Transformer encoder implemented from first principles in PyTorch. Includes MHA, QKV projections, scaled attention, LayerNorm, residual pathways, and positional encoding. Ideal for learning and debugging LLM internals.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.2-red)
+![Transformer](https://img.shields.io/badge/Architecture-Transformer-blueviolet)
+![Attention](https://img.shields.io/badge/Module-Attention-ff69b4)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
 
-Minimal Transformer encoder block with multi-head self-attention,
-LayerNorm, residual connections, and sinusoidal positional encoding.
+> Minimal Transformer encoder implemented from scratch, including multi-head self-attention, QKV projections, residual connections, LayerNorm, and sinusoidal positional encoding.
+
+---
+
+## 🚀 Overview
+
+This project implements a **Transformer encoder block entirely from scratch** in PyTorch — no `nn.Transformer`, no shortcuts.  
+It mirrors the internal building blocks found in modern LLMs.
+
+Included components:
+
+- Scaled dot-product attention  
+- Multi-head projection  
+- Pre-LayerNorm style normalization  
+- Residual connections  
+- Feedforward MLP block  
+- Sinusoidal positional encodings  
+
+Perfect for studying “attention under the hood” and debugging LLM internals.
+
+---
+
+## ▶️ Quickstart
+
+```bash
+pip install -r requirements.txt
+python transformer_encoder.py
