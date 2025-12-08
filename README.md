@@ -42,7 +42,6 @@ requirements.txt
 
 The encoder block follows the common **Pre-LN Transformer** pattern:
 
-```text
 Input embeddings
         |
         v
