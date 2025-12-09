@@ -1,41 +1,63 @@
-# Transformer Encoder From Scratch (PyTorch)
+# 🧠 Transformer Encoder From Scratch — PyTorch Implementation
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
-![Model](https://img.shields.io/badge/Architecture-Transformer-purple)
-![Educational](https://img.shields.io/badge/Purpose-Educational-green)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-> A minimal, readable Transformer encoder implemented in PyTorch, designed to emphasize architecture clarity. Demonstrates LayerNorm ordering, attention mechanisms, residual connections, and feedforward blocks in a pedagogical format.
-
----
-
-## 🚀 Overview
-
-This project implements a **Transformer encoder block entirely from scratch** in PyTorch — no `nn.Transformer`, no shortcuts.  
-It mirrors the internal building blocks found in modern LLMs.
-
-Included components:
-
-- Scaled dot-product attention  
-- Multi-head projection  
-- Pre-LayerNorm style normalization  
-- Residual connections  
-- Feedforward MLP block  
-- Sinusoidal positional encodings  
-
-Perfect for studying “attention under the hood” and debugging LLM internals.
+## ⚡ Tagline
+A clean, minimal PyTorch implementation of a Pre-LN Transformer encoder block built entirely from first principles.
 
 ---
 
-## ▶️ Quickstart (For Reviewers)
+## 🚀 Quickstart
 
 ```bash
 pip install -r requirements.txt
 python transformer_encoder.py
+```
 
-transformer_encoder.py    # Full encoder implementation
-requirements.txt
+Runs a full forward pass through the encoder using synthetic inputs.
+
+---
+
+## 📁 Files
+
+```text
+transformer_encoder.py   # Full transformer implementation
+run_demo.py              # Lightweight forward-pass demo
+requirements.txt         # Dependencies
+```
+
+---
+
+## 🏗 Overview
+
+This implementation follows the standard **Pre-LayerNorm Transformer Encoder** pattern:
+
+```
+Input → LayerNorm → Multi-Head Attention → Residual →
+LayerNorm → MLP (GELU) → Residual → Output
+```
+
+Includes:
+
+- Scaled dot-product self-attention  
+- Multi-head attention mechanism  
+- Position-wise feed-forward network  
+- GELU activations  
+- Residual skip connections  
+- LayerNorm for stability  
+
+---
+
+## 📂 Project Structure
+
+```text
+.
+├── transformer_encoder.py
+├── run_demo.py
+├── requirements.txt
+└── CONTRIBUTING.md
 ```
 
 ---
@@ -72,6 +94,10 @@ Input embeddings
 
 ---
 
-## 📜 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+## 🤝 Contributing
+See CONTRIBUTING.md for contribution workflow and code style guidelines.
 
+---
+
+## 📄 License
+MIT License. See `LICENSE` for details.
