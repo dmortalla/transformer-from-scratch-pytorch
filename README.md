@@ -44,7 +44,7 @@ requirements.txt         # Dependencies
 
 ---
 
-## 🏗 Architecture Overview
+## 🏗 Overview
 
 This implementation follows the standard **Pre-LayerNorm Transformer Encoder** pattern:
 
