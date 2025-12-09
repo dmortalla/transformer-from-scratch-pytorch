@@ -28,7 +28,7 @@ Perfect for studying “attention under the hood” and debugging LLM internals.
 
 ---
 
-## ▶️ Quickstart
+## ▶️ Quickstart (For Reviewers)
 
 ```bash
 pip install -r requirements.txt
