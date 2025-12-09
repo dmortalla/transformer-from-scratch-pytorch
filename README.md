@@ -9,28 +9,42 @@ A clean, minimal PyTorch implementation of a Pre-LN Transformer encoder block bu
 
 ---
 
-## 🚀 Quickstart
+## 🚀 Quickstart Demo (For Reviewers)
+
+Run a **lightweight forward-pass demo**:
 
 ```bash
 pip install -r requirements.txt
+python demo_forward.py
+```
+
+This validates the model architecture, attention mechanism, and end-to-end forward computation using synthetic data.
+
+---
+
+## 📦 Full Model Run
+
+Run the full Transformer encoder implementation:
+
+```bash
 python transformer_encoder.py
 ```
 
-Runs a full forward pass through the encoder using synthetic inputs.
+This executes the complete encoder block with attention, MLP layers, residual connections, and normalization.
 
 ---
 
 ## 📁 Files
 
 ```text
-transformer_encoder.py   # Full transformer implementation
-run_demo.py              # Lightweight forward-pass demo
+transformer_encoder.py   # Full Transformer encoder implementation
+demo_forward.py          # Lightweight forward-pass demonstration
 requirements.txt         # Dependencies
 ```
 
 ---
 
-## 🏗 Overview
+## 🏗 Architecture Overview
 
 This implementation follows the standard **Pre-LayerNorm Transformer Encoder** pattern:
 
@@ -39,14 +53,16 @@ Input → LayerNorm → Multi-Head Attention → Residual →
 LayerNorm → MLP (GELU) → Residual → Output
 ```
 
-Includes:
+It includes:
 
-- Scaled dot-product self-attention  
-- Multi-head attention mechanism  
-- Position-wise feed-forward network  
-- GELU activations  
+- Scaled dot-product multi-head self-attention  
+- Projection layers for Q/K/V  
+- Attention output projection  
+- Position-wise MLP with GELU  
 - Residual skip connections  
-- LayerNorm for stability  
+- LayerNorm for training stability  
+
+This repo is ideal for showcasing architectural understanding of modern Transformer building blocks.
 
 ---
 
@@ -55,9 +71,10 @@ Includes:
 ```text
 .
 ├── transformer_encoder.py
-├── run_demo.py
+├── demo_forward.py
 ├── requirements.txt
-└── CONTRIBUTING.md
+├── CONTRIBUTING.md
+└── SECURITY.md
 ```
 
 ---
@@ -95,7 +112,7 @@ Input embeddings
 ---
 
 ## 🤝 Contributing
-See CONTRIBUTING.md for contribution workflow and code style guidelines.
+See `CONTRIBUTING.md` for contribution workflow and coding standards.
 
 ---
 
